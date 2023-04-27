@@ -23,6 +23,64 @@ public class FaceManager : MonoBehaviour
         selectDefault(head);
     }
 
+    KeyValuePair<int, List<GameObject>> getIndexAndList(GameObject target)
+    {
+        int index = -1;
+        List<GameObject> resultList = default;
+        
+        if (index == -1)
+        {
+            index = leftHair.FindIndex(gameObject => gameObject == target);
+            resultList = leftHair;
+        }
+        
+        if (index == -1)
+        {
+            index = rightHair.FindIndex(gameObject => gameObject == target);
+            resultList = rightHair;
+        }
+        
+        if (index == -1)
+        {
+            index = leftEye.FindIndex(gameObject => gameObject == target);
+            resultList = leftEye;
+        }
+        
+        if (index == -1)
+        {
+            index = nose.FindIndex(gameObject => gameObject == target);
+            resultList = nose;
+        }
+        
+        if (index == -1)
+        {
+            index = mouth.FindIndex(gameObject => gameObject == target);
+            resultList = mouth;
+        }
+        
+        if (index == -1)
+        {
+            index = head.FindIndex(gameObject => gameObject == target);
+            resultList = head;
+        }
+
+        return new KeyValuePair<int, List<GameObject>>(index, resultList);
+    }
+
+    public bool enable(GameObject enableTarget)
+    {
+        var result = getIndexAndList(enableTarget);
+
+        Debug.LogWarning(result.Key);
+
+        if (result.Key != -1)
+        {
+            selectIthElement(result.Key, result.Value);
+        }
+
+        return true;
+    }
+
     void selectIthElement(int index, List<GameObject> gameObjects)
     {
         if (gameObjects == default || gameObjects.Count < (index + 1))
