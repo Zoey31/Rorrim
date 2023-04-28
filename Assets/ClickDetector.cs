@@ -21,7 +21,8 @@ public class ClickDetector : MonoBehaviour
         {
             try
             {
-                var target = hit.collider.gameObject.GetComponent<ClickAblePart>();
+                var target = hit.collider.gameObject.GetComponent<ClickAbleInterface>();
+                target.OnHover();
                 if (Input.GetMouseButtonDown(0))
                 {
                     target.OnClick();
@@ -29,7 +30,7 @@ public class ClickDetector : MonoBehaviour
             }
             catch
             {
-
+               
             }
 
         }
