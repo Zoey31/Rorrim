@@ -1,8 +1,62 @@
 fileFormatVersion: 2
 guid: fce72025e904b634e8c156450cc83fff
 ModelImporter:
-  serializedVersion: 22103
-  internalIDToNameTable: []
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Eye
+    100004: EyeLids
+    100006: Hair1
+    100008: Head
+    100010: MouthHappy_Angry
+    100012: MouthHappy_Disgust
+    100014: MouthHappy_Numb
+    100016: MouthHappy_Sad
+    100018: MouthSupriced
+    100020: Nose
+    400000: //RootNode
+    400002: Eye
+    400004: EyeLids
+    400006: Hair1
+    400008: Head
+    400010: MouthHappy_Angry
+    400012: MouthHappy_Disgust
+    400014: MouthHappy_Numb
+    400016: MouthHappy_Sad
+    400018: MouthSupriced
+    400020: Nose
+    2100000: No Name
+    2300000: Eye
+    2300002: EyeLids
+    2300004: Hair1
+    2300006: Head
+    2300008: MouthHappy_Angry
+    2300010: MouthHappy_Disgust
+    2300012: MouthHappy_Numb
+    2300014: MouthHappy_Sad
+    2300016: MouthSupriced
+    2300018: Nose
+    3300000: Eye
+    3300002: EyeLids
+    3300004: Hair1
+    3300006: Head
+    3300008: MouthHappy_Angry
+    3300010: MouthHappy_Disgust
+    3300012: MouthHappy_Numb
+    3300014: MouthHappy_Sad
+    3300016: MouthSupriced
+    3300018: Nose
+    4300000: Hair1
+    4300002: EyeLids
+    4300004: Nose
+    4300006: MouthHappy_Sad
+    4300008: Head
+    4300010: MouthSupriced
+    4300012: MouthHappy_Angry
+    4300014: MouthHappy_Numb
+    4300016: MouthHappy_Disgust
+    4300018: Eye
+    9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -15,7 +69,7 @@ ModelImporter:
       name: White
     second: {fileID: 2100000, guid: e380e3612f56b0a45a6e621d803cb3d9, type: 2}
   materials:
-    materialImportMode: 2
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -24,7 +78,6 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
-    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -49,35 +102,25 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
-    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
-    nodeNameCollisionStrategy: 1
-    fileIdsGeneration: 2
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
+    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
-    bakeAxisConversion: 0
     preserveHierarchy: 0
-    skinWeightsMode: 0
-    maxBonesPerVertex: 4
-    minBoneWeight: 0.001
-    optimizeBones: 1
-    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
-    secondaryUVMarginMethod: 1
-    secondaryUVMinLightmapResolution: 40
-    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    strictVertexDataChecks: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -86,10 +129,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips: []
   importAnimation: 1
+  copyAvatar: 0
   humanDescription:
-    serializedVersion: 3
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -99,19 +142,13 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 100
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
-  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
-  importBlendShapeDeformPercent: 1
-  remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
